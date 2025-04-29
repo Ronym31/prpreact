@@ -15,8 +15,8 @@ root.render(
     {/* <App /> */}
     {/* <About /> */}
     {/* <Footer /> */}
-    {/* <Apiget /> */}
-    <Apipost />
+    <Apiget />
+    {/* <Apipost /> */}
     {/* <Car name='PQR' /> */}
   </React.StrictMode>
 );
