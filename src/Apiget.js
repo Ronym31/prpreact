@@ -12,7 +12,7 @@ const Apiget = () => {
         .then((res) => res.json())
         .then((data) => {
             console.log(data , 'data');
-            setPosts(data);
+            setPosts(data.data);
             setLoading(false)
         })
         .catch((err) => {
