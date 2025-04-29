@@ -7,7 +7,7 @@ const Apiget = () => {
 
     
     useEffect(() => {
-        fetch("https://dummy-json.mock.beeceptor.com/posts")
+        fetch("https://gitprp.vercel.app/finduser")
         // can use axios 
         .then((res) => res.json())
         .then((data) => {
@@ -28,9 +28,9 @@ const Apiget = () => {
             <thead>
                 <tr>
                     <td>S.No.</td>
-                    <td>User id</td>
-                    <td>Title</td>
-                    <td>Comment Count</td>
+                    <td>Reg no </td>
+                    <td>name</td>
+                    <td>marks </td>
                 </tr>
             </thead>
 
@@ -38,9 +38,9 @@ const Apiget = () => {
                 {posts.map((post , index) => 
                 <tr key = {index}>
                     <td>{index + 1}</td>
-                    <td>{post.userId}</td>
-                    <td>{post.title}</td>
-                    <td>{post.comment_count}</td>
+                    <td>{post.regno}</td>
+                    <td>{post.name}</td>
+                    <td>{post.marks}</td>
                 </tr>
                 )}
             </tbody>
